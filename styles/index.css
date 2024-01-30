@@ -1,0 +1,165 @@
+.nav {
+    display: none;
+}
+.header {
+    padding: 1.5rem 0;
+    height: 60px;
+}
+.header__contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__ingreso {
+    display: flex;
+    align-items: center;
+    gap: 0.50rem;
+}
+
+.header__ingreso button {
+    display: none;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.portada__imagen figure img {
+    object-fit: cover;
+    height: 310px;
+    width: 310px;
+}
+
+.portada__accion {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.beneficio {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.beneficio__icon {
+    display: flex;
+    flex-direction: column;
+    gap: .50rem;
+    align-items: center;
+    margin-bottom: 0.50rem;
+}
+
+.beneficio__card {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .12);
+}
+
+.catalogo {
+    margin: 2rem 0;
+}
+
+.catalogo__productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.catalogo__productos .card {
+    background: linear-gradient(#34405A, #384C75);
+}
+
+.catalogo__imagen img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.catalogo__imagen {
+    margin-bottom: 0.5rem;
+
+}
+
+.catalogo__producto {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .12);
+}
+
+.catalogo__productos .card:nth-child(odd) .catalogo__producto {
+    flex-direction: column-reverse;
+}
+
+.catalogo__productos .card:nth-child(1) {
+    background: linear-gradient(#5C5CA3, #9191E1);
+
+}
+
+.descubre-app {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.descubre-app img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 310px;
+    width: 310px;
+}
+.descubre-app__boton{
+    display: flex;
+    align-items: center;
+}
+.baner-notificacion {
+    margin: 3rem 0;
+    background-color: #F4F0E4;
+    color: var(--background-color);
+}
+
+.baner-notificacion__texto {
+    padding: 2rem;
+}
+
+.baner-notificacion__input {
+    display: flex;
+}
+
+.baner-notificacion__input input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.baner-notificacion__input button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.footer__logo-contenedor{
+    margin: 2rem 0;
+}
+.footer__copyright{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.footer__copyright-redes{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.footer__red-social{
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: rgb(37 53 65 /80%)
+}
