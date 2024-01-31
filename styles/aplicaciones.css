@@ -9,22 +9,26 @@ h1{
 .aplicaciones__filtro{
  display: flex;
  justify-content: space-between;
+ gap: 2rem;
 }
 .aplicaciones__input{
  position: relative;
  display: flex;
  align-items: center;
  justify-content: center;
+ flex: 1;
+
 }
 .aplicaciones__input input{
- padding-left: 25px;
+ padding-left: 30px;
  background-color: transparent;
  color: #fff;
+ width: 100%;
 }
 .aplicaciones__icon-input{
     position: absolute;
     color:#929191;  
-    left: 5px;
+    left: 10px;
 }
 .aplicaciones__btn-filtro{
     background-color: #2C2C3F;
@@ -86,7 +90,7 @@ h1{
     transition: transform 0.5s ease-in;
 }
 .aplicaciones__app:hover .aplicaciones__icon-animado {
-    animation:1s linear volar-cohete  ;
+    animation:0.5s linear volar-cohete  ;
 }
 @keyframes volar-cohete {
     from {
