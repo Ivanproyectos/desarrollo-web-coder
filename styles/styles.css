@@ -77,7 +77,7 @@ hr{
 .control-input{
     padding: 0.600rem 0.850rem;
     border-radius: 5px;
-    border: 1px solid #ced4da; 
+    border: 1px solid #8f8f8f; 
 }
 .control-input:focus{
     border:1px solid var(--primary-color);
@@ -118,8 +118,9 @@ hr{
 
 }
 .badge{
-   padding: 0.50rem;
+   padding: 0.40rem 0.50rem;
    border-radius: 0.70rem;
+   font-size: 0.9rem;
 }
 .badge-success{
     background-color: var(--succes-color-light);
@@ -153,6 +154,54 @@ hr{
 .bg-secondary{
  background: #2C2C3F;
 }
+
+.nav {
+    display: none;
+}
+.header {
+    padding: 1.5rem 0;
+    height: 60px;
+}
+.header__contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__ingreso {
+    display: flex;
+    align-items: center;
+    gap: 0.50rem;
+}
+
+.header__ingreso button {
+    display: none;
+}
+
+.footer__contenedor{
+    padding-top: 7rem;
+}
+.footer__logo-contenedor{
+    margin: 2rem 0;
+}
+.footer__copyright{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.footer__copyright-redes{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.footer__red-social{
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: rgb(37 53 65 /80%)
+}
+
 
 @media (max-width:570px){
     .wrapper{

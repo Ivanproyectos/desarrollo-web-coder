@@ -14,20 +14,20 @@
             <figure class="header__logo">
                 <img src="../assets/img/Logo.svg">
             </figure>
-            <div class="header__contenedor-navbar">
-                <nav>
+            <div class="header__navbar">
+                <nav class="nav">
                     <ul>
-                        <li>Inicio</li>
-                        <li>Soluciones</li>
-                        <li>Precios</li>
-                        <li>Contacto</li>
+                        <li><a>Inicio</a></li>
+                        <li><a>Soluciones</a></li>
+                        <li><a>Precios</a></li>
+                        <li><a>Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
                     <a href="#">Plataforma</a>
                     <button class="btn btn-danger">Comienza Gratis</button>
                     <div class="header__btn-menu">
-                        <i class='bx bx-menu'></i>
+                        <i class='bx-md bx bx-menu'></i>
                     </div>
                 </div>
             </div>
@@ -35,30 +35,46 @@
     </header>
     <main>
         <section>
-            <h1>Encuentra a qui tu nueva arma para una gestión eficiente</h1>
-            <div class="aplicacion__filtro">
-                <input type="text" placeholder="buscar...">
-                <button type="button" class="btn btn-outline-light">
-                    <i class='bx bx-slider'></i> Filtrar
-                </button>
-            </div>
-            <div class="aplicacion__contenedor">
-                <article>
-                    <h4>Facturacion Electronica</h4>
-                    <img src="../assets/img/sistema-ventas.png" alt="dashboard de un sistema de ventas">
-                    <div class="d-flex">
-                        <button class="btn btn-outline-primary">Demo</button>
-                        <button class="btn btn-primary">Comenzar</button>
+            <div class="wrapper aplicaciones">
+                <h1>Encuentra a qui tu nueva arma para una gestión eficiente</h1>
+                <div class="aplicaciones__filtro">
+                    <div class="aplicaciones__input">
+                        <i class="bx bx-search bx-sm aplicaciones__icon-input"></i>
+                        <input type="text" class="control-input" placeholder="buscar...">
                     </div>
-                </article>
-                <article>
-                    <h4>Gym</h4>
-                    <img src="../assets/img/sistema-gym.png" alt="dashboard de un sistema de gym">
-                    <div class="d-flex">
-                        <button class="btn btn-outline-primary">Demo</button>
-                        <button class="btn btn-primary">Comenzar</button>
-                    </div>
-                </article>
+                    <button type="button" class="btn btn-outline-light aplicaciones__btn-filtro">
+                        <i class='bx bx-slider'></i> Filtrar
+                    </button>
+                </div>
+                <div class="aplicaciones__lista-app">
+                    <article class="aplicaciones__app">
+                        <div class="aplicaciones__app-titulo">
+                            <h3>Facturacion Electronica </h3>
+                            <span class="badge badge-success"><i class="bx bx-star"></i> Popular</span>
+                        </div>
+                        <figure>
+                            <img src="../assets/img/sistema-ventas.png" alt="dashboard de un sistema de ventas">
+                        </figure>
+                        <div class="aplicaciones__acciones">
+                            <button class="btn btn-outline-primary">Demo</button>
+                            <button class="btn btn-primary aplicaciones__acciones--principal">Comenzar
+                                <span class="aplicaciones__icon-animado">🚀</span>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="aplicaciones__app">
+                        <h3>Gestion de Gym</h3>
+                        <figure>
+                            <img src="../assets/img/sistema-gym.png" alt="dashboard de un sistema de gym">
+                        </figure>
+                        <div class="aplicaciones__acciones">
+                            <button class="btn btn-outline-primary">Demo</button>
+                            <button class="btn btn-primary aplicaciones__acciones--principal">Comenzar
+                                <span class="aplicaciones__icon-animado">🚀</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
@@ -69,43 +85,43 @@
                     <img src="../assets/img/Logo.svg">
                 </figure>
                 <div class="footer__enlace-contenedor">
-                    <h4>Soluciones</h4>
-                    <ul>
-                        <li>Facturacion electronica</li>
-                        <li>Gestion Gym</li>
-                        <li>Gestion Documenta</li>
-                        <li>Ventanilla virtual</li>
-                        <li>Notificaciones virtual</li>
+                    <h3 class="text-primary">Soluciones</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Facturacion electronica</li>
+                        <li class="grupo-lista-elemento">Gestion Gym</li>
+                        <li class="grupo-lista-elemento">Gestion Documenta</li>
+                        <li class="grupo-lista-elemento">Ventanilla virtual</li>
+                        <li class="grupo-lista-elemento">Notificaciones virtual</li>
                     </ul>
                 </div>
                 <div class="footer__enlace-contenedor">
-                    <h4>Enlaces Utiles</h4>
-                    <ul>
-                        <li>Contactanos</li>
-                        <li>Testimonios</li>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Ubicanos</li>
+                    <h3 class="text-primary">Enlaces Utiles</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Contactanos</li>
+                        <li class="grupo-lista-elemento">Testimonios</li>
+                        <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
+                        <li class="grupo-lista-elemento">Ubicanos</li>
                     </ul>
                 </div>
                 <div class="footer__enlace-contenedor">
-                    <h4>Sobre Nosotros</h4>
-                    <ul>
-                        <li>Quienes Somos</li>
-                        <li>Trabaja con nostros</li>
-                        <li>Terminos y condiciones</li>
-                        <li>Blog</li>
+                    <h3 class="text-primary">Sobre Nosotros</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Quienes Somos</li>
+                        <li class="grupo-lista-elemento">Trabaja con nostros</li>
+                        <li class="grupo-lista-elemento">Terminos y condiciones</li>
+                        <li class="grupo-lista-elemento">Blog</li>
                     </ul>
                 </div>
             </div>
             <hr />
             <div class="footer__copyright">
                 <div class="footer__copyright-texto">
-                    <p>COPYRIGHT © 2023 Awesome S.A.S.</p>
+                    <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
                 </div>
                 <div class="footer__copyright-redes">
-                    <div class="footer__red-social"><i class='bx bxl-facebook'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-instagram'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-linkedin'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
                 </div>
             </div>
         </div>
