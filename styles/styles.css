@@ -163,8 +163,8 @@ hr{
     height: 200px;
     width: 200px;
     background-color: var(--secondary-color);
-    bottom: -15%;
-    right: -15%;
+    bottom: -12%;
+    right: -12%;
     filter: blur(60px);
     opacity: 0.4;
     border-radius: 50%;

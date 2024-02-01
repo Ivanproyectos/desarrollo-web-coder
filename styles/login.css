@@ -44,6 +44,19 @@ main{
   justify-content: space-between;
   margin-bottom: 0.8rem;
 }
+.login__input-password{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.login__input-password .login__icon-password {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+.login__input-password input{
+  padding-right: 35px;
+}
 .login__dividir{
   position: relative;
   margin: 2rem 0px;
@@ -71,7 +84,7 @@ main{
 .login__externo{
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 .login__btn-ingresar{
   display: flex;
