@@ -44,6 +44,10 @@ a{
     text-decoration: none;
     color: var(--text-color);
 }
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 hr{
     border: 1px solid rgb(var(--border-color)/15%)
 }
@@ -154,7 +158,17 @@ hr{
 .bg-secondary{
  background: #2C2C3F;
 }
-
+.filtro-bottom{
+    position: absolute; 
+    height: 200px;
+    width: 200px;
+    background-color: var(--secondary-color);
+    bottom: -15%;
+    right: -15%;
+    filter: blur(60px);
+    opacity: 0.4;
+    border-radius: 50%;
+}
 .nav {
     display: none;
 }
