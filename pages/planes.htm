@@ -14,69 +14,125 @@
             <figure class="header__logo">
                 <img src="../assets/img/Logo.svg">
             </figure>
-            <div class="header__contenedor-navbar">
-                <nav>
+            <div class="header__navbar">
+                <nav class="nav">
                     <ul>
-                        <li>Inicio</li>
-                        <li>Soluciones</li>
-                        <li>Precios</li>
-                        <li>Contacto</li>
+                        <li><a>Inicio</a></li>
+                        <li><a>Soluciones</a></li>
+                        <li><a>Precios</a></li>
+                        <li><a>Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
                     <a href="#">Plataforma</a>
                     <button class="btn btn-danger">Comienza Gratis</button>
                     <div class="header__btn-menu">
-                        <i class='bx bx-menu'></i>
+                        <i class='bx-md bx bx-menu'></i>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
-           <h1>Nuestros planes </h1>
-           <p>elige un plan ganador para tu negocio</p>
-           <div class="plan__contenedor">
-                <article class="card">
+        <section class="wrapper">
+            <h1 class="text-center">Nuestros planes </h1>
+            <p class="text-center">elige un plan ganador para tu negocio</p>
+            <div class="plan__contenedor">
+                <article class="card plan__tipo">
                     <div class="card-body">
                         <div class="plan__icon">
-                            <span><i class='bx bx-briefcase-alt'></i></span>
+                            <span>
+                                <i class='bx bx-purchase-tag-alt bx-lg'></i>
+                            </span>
                         </div>
-                        <h4>Basico</h4>
-                        <p>
-                            <small>s/.</small><span class="text-primary">0</span> Mensual               
+                        <h2 class="text-center">Basico</h2>
+                        <p class="text-center plan__precio-contenedor">
+                            <small>s/.</small><span class="text-primary plan__precio">0</span> Mensual
                         </p>
-                        <ul>
-                            <li><i class='bx bx-check-square'></i>0 respuestas al mes</li>
-                            <li><i class='bx bx-check-square'>Herramientas básicas de creación de formularios</i></li>
-                            <li><i class='bx bx-check-square'>Hasta 2 subdominios</i></li>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                <span> 0 respuestas al mes</span>
+                            </li>
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                Herramientas básicas de creación de formularios
+                            </li>
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                Hasta 2 subdominios
+                            </li>
                         </ul>
                         <div class="plan__footer">
                             <button class="btn btn-outline-primary">Suscribirme</button>
                         </div>
-                    </div>         
+                    </div>
                 </article>
-                <article class="card">
+                <article class="card plan__tipo plan__tipo--destacado">
+                    <div class="plan__etiqueta-popular"><i class="bx bx-star"></i>Popular</div>
                     <div class="card-body">
                         <div class="plan__icon">
-                            <span><i class='bx bx-star'></i></span>
+                            <span>
+                                <i class='bx bxs-user-account bx-lg'></i>
+                                </i></span>
                         </div>
-                        <h4>Pro</h4>
-                        <p>
-                            <small>s/.</small><span class="text-primary">60</span> Mensual               
+                        <h2 class="text-center">Emprendedor</h2>
+                        <p class="text-center plan__precio-contenedor">
+                            <small>s/.</small><span class="text-primary plan__precio">60</span> Mensual
                         </p>
-                        <ul>
-                            <li><i class='bx bx-check-square'></i>0 respuestas al mes</li>
-                            <li><i class='bx bx-check-square'>Herramientas básicas de creación de formularios</i></li>
-                            <li><i class='bx bx-check-square'>Hasta 2 subdominios</i></li>
+
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                <span> 0 respuestas al mes</span>
+                            </li>
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                Herramientas básicas de creación de formularios
+                            </li>
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                Hasta 2 subdominios
+                            </li>
                         </ul>
+                        <div class="plan__footer">
+                            <button class="btn btn-primary">Suscribirme</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card plan__tipo">
+                    <div class="card-body">
+                        <div class="plan__icon">
+                            <span>
+                                <i class='bx bxs-business bx-lg'></i>
+                            </span>
+                        </div>
+                        <h2 class="text-center">Pro</h2>
+                        <p class="text-center plan__precio-contenedor">
+                            <small>s/.</small><span class="text-primary  plan__precio">120</span> Mensual
+                        </p>
+
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                <span> 0 respuestas al mes</span>
+                            </li>
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                Herramientas básicas de creación de formularios
+                            </li>
+                            <li class="grupo-lista-elemento">
+                                <i class="bx bx-check bx-sm text-success"></i>
+                                Hasta 2 subdominios
+                            </li>
+                        </ul>
+
                         <div class="plan__footer">
                             <button class="btn btn-outline-primary">Suscribirme</button>
                         </div>
-                    </div>         
+                    </div>
                 </article>
-           </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -86,43 +142,43 @@
                     <img src="../assets/img/Logo.svg">
                 </figure>
                 <div class="footer__enlace-contenedor">
-                    <h4>Soluciones</h4>
-                    <ul>
-                        <li>Facturacion electronica</li>
-                        <li>Gestion Gym</li>
-                        <li>Gestion Documenta</li>
-                        <li>Ventanilla virtual</li>
-                        <li>Notificaciones virtual</li>
+                    <h3 class="text-primary">Soluciones</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Facturacion electronica</li>
+                        <li class="grupo-lista-elemento">Gestion Gym</li>
+                        <li class="grupo-lista-elemento">Gestion Documenta</li>
+                        <li class="grupo-lista-elemento">Ventanilla virtual</li>
+                        <li class="grupo-lista-elemento">Notificaciones virtual</li>
                     </ul>
                 </div>
                 <div class="footer__enlace-contenedor">
-                    <h4>Enlaces Utiles</h4>
-                    <ul>
-                        <li>Contactanos</li>
-                        <li>Testimonios</li>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Ubicanos</li>
+                    <h3 class="text-primary">Enlaces Utiles</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Contactanos</li>
+                        <li class="grupo-lista-elemento">Testimonios</li>
+                        <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
+                        <li class="grupo-lista-elemento">Ubicanos</li>
                     </ul>
                 </div>
                 <div class="footer__enlace-contenedor">
-                    <h4>Sobre Nosotros</h4>
-                    <ul>
-                        <li>Quienes Somos</li>
-                        <li>Trabaja con nostros</li>
-                        <li>Terminos y condiciones</li>
-                        <li>Blog</li>
+                    <h3 class="text-primary">Sobre Nosotros</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Quienes Somos</li>
+                        <li class="grupo-lista-elemento">Trabaja con nostros</li>
+                        <li class="grupo-lista-elemento">Terminos y condiciones</li>
+                        <li class="grupo-lista-elemento">Blog</li>
                     </ul>
                 </div>
             </div>
             <hr />
             <div class="footer__copyright">
                 <div class="footer__copyright-texto">
-                    <p>COPYRIGHT © 2023 Awesome S.A.S.</p>
+                    <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
                 </div>
                 <div class="footer__copyright-redes">
-                    <div class="footer__red-social"><i class='bx bxl-facebook'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-instagram'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-linkedin'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
                 </div>
             </div>
         </div>
