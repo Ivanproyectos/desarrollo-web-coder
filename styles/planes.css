@@ -82,3 +82,6 @@ main {
 .plan__precio-contenedor small{
     align-self: flex-start;
 }
+.borrame{
+    padding: 10px;
+}
