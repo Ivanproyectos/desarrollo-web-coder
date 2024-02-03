@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/animaciones.css">
 <link rel="stylesheet" href="styles/styles.css">
 <link rel="stylesheet" href="styles/index.css">
 <link rel="stylesheet" href="../assets/boxicons/css/boxicons.min.css">
@@ -12,23 +13,25 @@
     <header class="header">
         <div class="header__contenedor wrapper">
             <figure class="header__logo">
-                <img src="assets/img/Logo.svg">
+                <img src="assets/img/Logo.svg" alt="logo">
             </figure>
             <div class="header__navbar">
+                <input  type="checkbox" hidden name="menu" id="btn-menu">
                 <nav class="nav">
+                    <label class="nav-btn-close-menu" for="btn-menu"><i class="bx bx-x bx-lg"></i></label>
                     <ul>
-                        <li><a>Inicio</a></li>
-                        <li><a>Soluciones</a></li>
-                        <li><a>Precios</a></li>
-                        <li><a>Contacto</a></li>
+                        <li><a href="#" class="nav-link-active">Inicio</a></li>
+                        <li><a href="pages/aplicaciones.html" >Soluciones</a></li>
+                        <li><a href="pages/planes.html">Precios</a></li>
+                        <li><a href="pages/contacto-ventas.html">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
                     <a href="#">Plataforma</a>
                     <button class="btn btn-danger">Comienza Gratis</button>
-                    <div class="header__btn-menu">
+                    <label class="header__btn-menu" for="btn-menu">
                         <i class='bx-md bx bx-menu'></i>
-                    </div>
+                    </label>
                 </div>
             </div>
         </div>
@@ -43,43 +46,43 @@
                         </figure>
                     </div>
                     <div class="portada__texto text-center">
-                        <h1>Potencia tu pyme con soluciones efectivas</h1>
+                        <h1 class="text-center">Potencia tu pyme con soluciones efectivas</h1>
                         <p>Registrate ahora y obten una prueba gratuita por 15 días.</p>
                         <div class="portada__accion">
                             <button class="btn btn-outline-primary">Contáctate a Ventas</button>
                             <button class="btn btn-danger">Comienza Gratis</button>
                         </div>
                     </div>
-                </div>
-                <div class="beneficio">
-                    <article class="card border beneficio__card">
-                        <div class="gradient-top"></div>
-                        <div class="card-body text-center">
-                            <div class="beneficio__icon">
-                                <i class='bx bx-shield-plus bx-lg'></i>
+                    <div class="beneficio">
+                        <article class="card border beneficio__card">
+                            <div class="gradient-top"></div>
+                            <div class="card-body text-center">
+                                <div class="beneficio__icon">
+                                    <i class='bx bx-shield-plus bx-lg'></i>
+                                </div>
+                                <p class="text-center">Seguridad garantizada</p>
                             </div>
-                            <p class="text-center">Seguridad garantizada</p>
-                        </div>
-                    </article>
-                    <article class="card border beneficio__card">
-                        <div class="gradient-top"></div>
-                        <div class="card-body text-center">
-                            <div class="beneficio__icon">
-                                <i class="bx bx-user bx-lg"></i>
+                        </article>
+                        <article class="card border beneficio__card">
+                            <div class="gradient-top"></div>
+                            <div class="card-body text-center">
+                                <div class="beneficio__icon">
+                                    <i class="bx bx-user bx-lg"></i>
+                                </div>
+                                <p class="text-center"><span class="badge badge-success">+10 mil</span> Emprendedores
+                                    satisfechos</p>
                             </div>
-                            <p class="text-center"><span class="badge badge-success">+10 mil</span> Emprendedores
-                                satisfechos</p>
-                        </div>
-                    </article>
-                    <article class="card border beneficio__card">
-                        <div class="gradient-top"></div>
-                        <div class="card-body text-center">
-                            <div class="beneficio__icon">
-                                <i class='bx bx-time-five bx-lg'></i>
+                        </article>
+                        <article class="card border beneficio__card">
+                            <div class="gradient-top"></div>
+                            <div class="card-body text-center">
+                                <div class="beneficio__icon">
+                                    <i class='bx bx-time-five bx-lg'></i>
+                                </div>
+                                <p class="text-center">Soporte las 24 horas</p>
                             </div>
-                            <p class="text-center">Soporte las 24 horas</p>
-                        </div>
-                    </article>
+                        </article>
+                    </div>
                 </div>
                 <hr>
             </div>
@@ -148,83 +151,89 @@
             </div>
         </section>
         <section class="bg-secondary">
-            <div class="wrapper descubre-app">
-                <article class="descubre-app__contenido">
-                    <figure class="text-center">
-                        <img src="assets/img/olvido-clave.png" alt="olvido su clave">
-                    </figure>
-                    <div>
-                        <h2>Olvida la molestia de crear y recordar <span class="text-primary">contreseñas complicadas</span></h2>
-                        <p>Con solo iniciar sesión en tu plataforma digital, tendrás acceso instantáneo a todas tus
-                            aplicaciones
-                            favoritas sin tener que ingresar manualmente tus datos de inicio de sesión cada vez</p>
-                        <button class="btn btn-primary descubre-app__boton">
-                            Descubrir mas aplicativos
-                            <i class='bx bx-right-arrow-alt bx-sm'></i>
-                        </button>
-                    </div>
-                </article>
-                <aside class="card baner-notificacion">
-                    <div class="baner-notificacion__copy">
-                        <h4>No te pierdas de nuestro increíbles descuentos exclusivo en todas nuestras aplicaciones,
-                            dejanos tu correo para notificarte.</h4>
-                        <div class="baner-notificacion__input">
-                            <input class="control-input" placeholder="ingrese correo" type="text" />
-                            <button class="btn btn-primary">¡Si, Notificame!</button>
+            <div class="wrapper ">
+                <div class="descubre-app">
+                    <article class="descubre-app__contenido">
+                        <figure class="text-center descubre-app__imagen">
+                            <img src="assets/img/olvide-password.png" alt="olvido su clave">
+                        </figure>
+                        <div>
+                            <h2 class="text-center">Olvida la molestia de crear y recordar <span
+                                    class="text-primary">contreseñas
+                                    complicadas</span></h2>
+                            <p>Con solo iniciar sesión en tu plataforma digital, tendrás acceso instantáneo a todas tus
+                                aplicaciones
+                                favoritas sin tener que ingresar manualmente tus datos de inicio de sesión cada vez</p>
+                            <button class="btn btn-primary descubre-app__boton">
+                                Descubrir mas aplicativos
+                                <i class='bx bx-right-arrow-alt bx-sm'></i>
+                            </button>
                         </div>
-                    </div>
-                </aside>
+                    </article>
+                    <aside class="card baner-notificacion">
+                        <div class="baner-notificacion__copy">
+                            <p>No te pierdas de nuestro increíbles descuentos exclusivo en todas nuestras aplicaciones,
+                                dejanos tu correo para notificarte.</p>
+                            <div class="baner-notificacion__input">
+                                <input class="control-input" placeholder="ingrese correo" type="text" />
+                                <button class="btn btn-danger">¡Si, Notificame!</button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__contenedor wrapper">
-            <div class="footer__info">
+        <div class="wrapper">
+            <div class="footer__contenedor">
                 <figure class="footer__logo-contenedor">
                     <img src="assets/img/Logo.svg">
                 </figure>
-                <div class="footer__enlace-contenedor">
-                    <h3 class="text-primary">Soluciones</h3>
-                    <ul class="grupo-lista">
-                        <li class="grupo-lista-elemento">Facturacion electronica</li>
-                        <li class="grupo-lista-elemento">Gestion Gym</li>
-                        <li class="grupo-lista-elemento">Gestion Documenta</li>
-                        <li class="grupo-lista-elemento">Ventanilla virtual</li>
-                        <li class="grupo-lista-elemento">Notificaciones virtual</li>
-                    </ul>
+                <div class="footer__info">
+                    <div class="footer__enlace-contenedor">
+                        <h3 class="text-primary">Soluciones</h3>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">Facturacion electronica</li>
+                            <li class="grupo-lista-elemento">Gestion Gym</li>
+                            <li class="grupo-lista-elemento">Gestion Documenta</li>
+                            <li class="grupo-lista-elemento">Ventanilla virtual</li>
+                            <li class="grupo-lista-elemento">Notificaciones virtual</li>
+                        </ul>
+                    </div>
+                    <div class="footer__enlace-contenedor">
+                        <h3 class="text-primary">Enlaces Utiles</h3>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">Contactanos</li>
+                            <li class="grupo-lista-elemento">Testimonios</li>
+                            <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
+                            <li class="grupo-lista-elemento">Ubicanos</li>
+                        </ul>
+                    </div>
+                    <div class="footer__enlace-contenedor">
+                        <h3 class="text-primary">Sobre Nosotros</h3>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">Quienes Somos</li>
+                            <li class="grupo-lista-elemento">Trabaja con nostros</li>
+                            <li class="grupo-lista-elemento">Terminos y condiciones</li>
+                            <li class="grupo-lista-elemento">Blog</li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div class="footer__enlace-contenedor">
-                    <h3 class="text-primary">Enlaces Utiles</h3>
-                    <ul class="grupo-lista">
-                        <li class="grupo-lista-elemento">Contactanos</li>
-                        <li class="grupo-lista-elemento">Testimonios</li>
-                        <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
-                        <li class="grupo-lista-elemento">Ubicanos</li>
-                    </ul>
-                </div>
-                <div class="footer__enlace-contenedor">
-                    <h3 class="text-primary">Sobre Nosotros</h3>
-                    <ul class="grupo-lista">
-                        <li class="grupo-lista-elemento">Quienes Somos</li>
-                        <li class="grupo-lista-elemento">Trabaja con nostros</li>
-                        <li class="grupo-lista-elemento">Terminos y condiciones</li>
-                        <li class="grupo-lista-elemento">Blog</li>
-                    </ul>
-                </div>
-            </div>
-            <hr />
-            <div class="footer__copyright">
-                <div class="footer__copyright-texto">
-                    <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
-                </div>
-                <div class="footer__copyright-redes">
-                    <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
+                <hr />
+                <div class="footer__copyright">
+                    <div class="footer__copyright-texto">
+                        <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
+                    </div>
+                    <div class="footer__copyright-redes">
+                        <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
+                        <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
+                        <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

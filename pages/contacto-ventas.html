@@ -13,23 +13,25 @@
     <header class="header">
         <div class="header__contenedor wrapper">
             <figure class="header__logo">
-                <img src="../assets/img/Logo.svg">
+                <img src="../assets/img/Logo.svg" alt="logo">
             </figure>
             <div class="header__navbar">
+                <input  type="checkbox" hidden name="menu" id="btn-menu">
                 <nav class="nav">
+                    <label class="nav-btn-close-menu" for="btn-menu"><i class="bx bx-x bx-lg"></i></label>
                     <ul>
-                        <li><a>Inicio</a></li>
-                        <li><a>Soluciones</a></li>
-                        <li><a>Precios</a></li>
-                        <li><a>Contacto</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/aplicaciones.html" >Soluciones</a></li>
+                        <li><a href="../pages/planes.html">Precios</a></li>
+                        <li><a href="#" class="nav-link-active">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
                     <a href="#">Plataforma</a>
                     <button class="btn btn-danger">Comienza Gratis</button>
-                    <div class="header__btn-menu">
+                    <label class="header__btn-menu" for="btn-menu">
                         <i class='bx-md bx bx-menu'></i>
-                    </div>
+                    </label>
                 </div>
             </div>
         </div>
@@ -81,49 +83,52 @@
           </section>
     </main>
     <footer class="footer">
-        <div class="footer__contenedor wrapper">
-            <div class="footer__info">
+        <div class="wrapper">
+            <div class="footer__contenedor">
                 <figure class="footer__logo-contenedor">
                     <img src="../assets/img/Logo.svg">
                 </figure>
-                <div class="footer__enlace-contenedor">
-                    <h3 class="text-primary">Soluciones</h3>
-                    <ul class="grupo-lista">
-                        <li class="grupo-lista-elemento">Facturacion electronica</li>
-                        <li class="grupo-lista-elemento">Gestion Gym</li>
-                        <li class="grupo-lista-elemento">Gestion Documenta</li>
-                        <li class="grupo-lista-elemento">Ventanilla virtual</li>
-                        <li class="grupo-lista-elemento">Notificaciones virtual</li>
-                    </ul>
+                <div class="footer__info">
+                    <div class="footer__enlace-contenedor">
+                        <h3 class="text-primary">Soluciones</h3>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">Facturacion electronica</li>
+                            <li class="grupo-lista-elemento">Gestion Gym</li>
+                            <li class="grupo-lista-elemento">Gestion Documenta</li>
+                            <li class="grupo-lista-elemento">Ventanilla virtual</li>
+                            <li class="grupo-lista-elemento">Notificaciones virtual</li>
+                        </ul>
+                    </div>
+                    <div class="footer__enlace-contenedor">
+                        <h3 class="text-primary">Enlaces Utiles</h3>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">Contactanos</li>
+                            <li class="grupo-lista-elemento">Testimonios</li>
+                            <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
+                            <li class="grupo-lista-elemento">Ubicanos</li>
+                        </ul>
+                    </div>
+                    <div class="footer__enlace-contenedor">
+                        <h3 class="text-primary">Sobre Nosotros</h3>
+                        <ul class="grupo-lista">
+                            <li class="grupo-lista-elemento">Quienes Somos</li>
+                            <li class="grupo-lista-elemento">Trabaja con nostros</li>
+                            <li class="grupo-lista-elemento">Terminos y condiciones</li>
+                            <li class="grupo-lista-elemento">Blog</li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div class="footer__enlace-contenedor">
-                    <h3 class="text-primary">Enlaces Utiles</h3>
-                    <ul class="grupo-lista">
-                        <li class="grupo-lista-elemento">Contactanos</li>
-                        <li class="grupo-lista-elemento">Testimonios</li>
-                        <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
-                        <li class="grupo-lista-elemento">Ubicanos</li>
-                    </ul>
-                </div>
-                <div class="footer__enlace-contenedor">
-                    <h3 class="text-primary">Sobre Nosotros</h3>
-                    <ul class="grupo-lista">
-                        <li class="grupo-lista-elemento">Quienes Somos</li>
-                        <li class="grupo-lista-elemento">Trabaja con nostros</li>
-                        <li class="grupo-lista-elemento">Terminos y condiciones</li>
-                        <li class="grupo-lista-elemento">Blog</li>
-                    </ul>
-                </div>
-            </div>
-            <hr />
-            <div class="footer__copyright">
-                <div class="footer__copyright-texto">
-                    <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
-                </div>
-                <div class="footer__copyright-redes">
-                    <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
+                <hr />
+                <div class="footer__copyright">
+                    <div class="footer__copyright-texto">
+                        <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
+                    </div>
+                    <div class="footer__copyright-redes">
+                        <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
+                        <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
+                        <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
+                    </div>
                 </div>
             </div>
         </div>
