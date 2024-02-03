@@ -1,0 +1,15 @@
+.contacto__contenedor{
+    margin: 4rem auto;
+}
+.contacto__btn-enviar{
+    width: 100%;
+    margin:1rem 0
+}
+.contacto__formulario .form-control{
+    background-color: transparent;
+    color: #fff;
+}
+.contacto__formulario .form-control:focus{
+    border:1px solid var(--primary-color);
+    outline: 0;
+}

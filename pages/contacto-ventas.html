@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="../styles/styles.css">
 <link rel="stylesheet" href="../assets/boxicons/css/boxicons.min.css">
 <link rel="stylesheet" href="../styles/contacto-ventas.css">
@@ -14,20 +15,20 @@
             <figure class="header__logo">
                 <img src="../assets/img/Logo.svg">
             </figure>
-            <div class="header__contenedor-navbar">
-                <nav>
+            <div class="header__navbar">
+                <nav class="nav">
                     <ul>
-                        <li>Inicio</li>
-                        <li>Soluciones</li>
-                        <li>Precios</li>
-                        <li>Contacto</li>
+                        <li><a>Inicio</a></li>
+                        <li><a>Soluciones</a></li>
+                        <li><a>Precios</a></li>
+                        <li><a>Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
                     <a href="#">Plataforma</a>
                     <button class="btn btn-danger">Comienza Gratis</button>
                     <div class="header__btn-menu">
-                        <i class='bx bx-menu'></i>
+                        <i class='bx-md bx bx-menu'></i>
                     </div>
                 </div>
             </div>
@@ -36,36 +37,45 @@
     <main>
         <section class="contacto__contenedor wrapper">
             <div class="contacto__formulario">
-                 <form>
-                      <h1>¿En que podemos ayudarte?</h1>
-                      <p>Completa la siguiente información y enseguida no estaremos contactandonos contigo</p>
-                      <div class="form-group">
-                         <label for="">Nombre</label>
-                         <input class="form-control" name="nombre" type="text">
+                <h1 class="text-center">¿En que podemos ayudarte?</h1>
+                <p class="text-center">Completa la siguiente información y enseguida no estaremos contactandonos contigo</p>
+                 <form action="" method="post">
+                    <div class="row">
+                        <div class="form-group col-md-6 mb-3">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="nombre" class="form-control" id="nombre" placeholder="ingrese nombre">
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                          <label for="nombre" class="form-label">Correo</label>
+                          <input type="password" class="form-control" id="nombre" placeholder="ingrese correo">
+                        </div>
                       </div>
-                      <div class="form-group">
-                         <label for="">Correo</label>
-                         <input class="form-control" name="correo" type="email">
+                      <div class="row">
+                        <div class="form-group col-md-6 mb-3">
+                          <label for="telefono" class="form-label">Telefono</label>
+                          <input type="telefono" class="form-control" id="telefono" placeholder="ingrese telefono">
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                          <label for="nombreNegocio" class="form-label">Nombre del negocio</label>
+                          <input type="password" class="form-control" name="nombreNegocio" id="nombreNegocio" placeholder="ingrese nombre del negocio">
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="">Telefono</label>
-                        <input class="form-control" name="telefono" type="tel">
+                     <div class="form-group mb-3">
+                        <label for="descripcion" class="form-label">¿En que podemos ayudarte?</label>
+                        <small class="text-info"><i class='bx bx-info-circle'></i> haz una breve descripción</small>
+                        <textarea class="form-control" name="descripcion" type="text" placeholder="describri tu consulta"></textarea>
                      </div>
-                     <div class="form-group">
-                        <label for="">Nombre del negocio</label>
-                        <input class="form-control" name="nombreNegocio" type="text">
+                     <div class="form-group mb-3">
+                        <label for="comentario" class="form-label">comentario</label>
+                        <textarea class="form-control" name="comentario"  placeholder="ingrese un comentario adicional"></textarea>
                      </div>
-                     <div class="form-group">
-                        <label for="">¿En que podemos ayudarte?</label>
-                        <small>haz una breve descripción</small>
-                        <input class="form-control" name="descripcion" type="text">
+                     <div class="form-group mt-3">
+                        <button class="btn btn-primary contacto__btn-enviar" type="button">Enviar</button>
                      </div>
-                     <div class="form-group">
-                        <label for="">comentario</label>
-                        <textarea class="form-control" name="descripcion"> </textarea>
-                     </div>
-                      <button class="btn btn-primary">Enviar</button>
-                      <a class="text-primary"><i class='bx bx-left-arrow-alt' ></i>Regresar al inicio</a>
+                     <p class="text-center">
+                        <a class="text-primary" href="/index.html"><i class='bx bx-left-arrow-alt' ></i>Regresar al inicio</a>
+                     </p>
+                   
                  </form>
             </div>
           </section>
@@ -77,43 +87,43 @@
                     <img src="../assets/img/Logo.svg">
                 </figure>
                 <div class="footer__enlace-contenedor">
-                    <h4>Soluciones</h4>
-                    <ul>
-                        <li>Facturacion electronica</li>
-                        <li>Gestion Gym</li>
-                        <li>Gestion Documenta</li>
-                        <li>Ventanilla virtual</li>
-                        <li>Notificaciones virtual</li>
+                    <h3 class="text-primary">Soluciones</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Facturacion electronica</li>
+                        <li class="grupo-lista-elemento">Gestion Gym</li>
+                        <li class="grupo-lista-elemento">Gestion Documenta</li>
+                        <li class="grupo-lista-elemento">Ventanilla virtual</li>
+                        <li class="grupo-lista-elemento">Notificaciones virtual</li>
                     </ul>
                 </div>
                 <div class="footer__enlace-contenedor">
-                    <h4>Enlaces Utiles</h4>
-                    <ul>
-                        <li>Contactanos</li>
-                        <li>Testimonios</li>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Ubicanos</li>
+                    <h3 class="text-primary">Enlaces Utiles</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Contactanos</li>
+                        <li class="grupo-lista-elemento">Testimonios</li>
+                        <li class="grupo-lista-elemento">Preguntas Frecuentes</li>
+                        <li class="grupo-lista-elemento">Ubicanos</li>
                     </ul>
                 </div>
                 <div class="footer__enlace-contenedor">
-                    <h4>Sobre Nosotros</h4>
-                    <ul>
-                        <li>Quienes Somos</li>
-                        <li>Trabaja con nostros</li>
-                        <li>Terminos y condiciones</li>
-                        <li>Blog</li>
+                    <h3 class="text-primary">Sobre Nosotros</h3>
+                    <ul class="grupo-lista">
+                        <li class="grupo-lista-elemento">Quienes Somos</li>
+                        <li class="grupo-lista-elemento">Trabaja con nostros</li>
+                        <li class="grupo-lista-elemento">Terminos y condiciones</li>
+                        <li class="grupo-lista-elemento">Blog</li>
                     </ul>
                 </div>
             </div>
             <hr />
             <div class="footer__copyright">
                 <div class="footer__copyright-texto">
-                    <p>COPYRIGHT © 2023 Awesome S.A.S.</p>
+                    <p>COPYRIGHT © 2024 Awesome S.A.C.</p>
                 </div>
                 <div class="footer__copyright-redes">
-                    <div class="footer__red-social"><i class='bx bxl-facebook'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-instagram'></i></div>
-                    <div class="footer__red-social"><i class='bx bxl-linkedin'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-facebook bx-sm'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-instagram bx-sm'></i></div>
+                    <div class="footer__red-social"><i class='bx bxl-linkedin bx-sm'></i></div>
                 </div>
             </div>
         </div>

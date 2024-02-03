@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5{
 body{
     background-color:var(--background-color);
     color:var(--text-color);
+    font-family: 'Inter', sans-serif;
 }
 p{
     margin-bottom: 1.5rem;
@@ -85,7 +86,11 @@ hr{
 }
 .control-input:focus{
     border:1px solid var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgb(105 108 255 / 25%);
     outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgb(105 108 255 / .25);
 }
 .btn-danger{
     background-color: var(--warning-color);
@@ -135,6 +140,7 @@ hr{
 }
 .grupo-lista {
     margin-bottom:  1rem;
+    padding-left: 0;
 }
 .grupo-lista .grupo-lista-elemento{
  list-style: none;
@@ -145,6 +151,7 @@ hr{
  flex-direction: row;
  gap:0.5rem;
  align-items: center;
+
 }
 .gradient-top{
     position: absolute;
@@ -196,7 +203,7 @@ hr{
 }
 
 .footer__contenedor{
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 .footer__logo-contenedor{
     margin: 2rem 0;
@@ -211,6 +218,9 @@ hr{
     align-items: center;
 }
 .footer__red-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     padding: 0.5rem;
     background: rgb(37 53 65 /80%)
