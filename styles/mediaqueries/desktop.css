@@ -83,12 +83,16 @@ html{
     justify-content: space-between;
 }
 .beneficio{
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     margin: 0;
 }
 .beneficio__card{
-    width: 35%;
+    width: 20%;
+}
+.beneficio__card .badge{
+    display: inline-block;
+ margin-bottom: 0.3rem;
 }
 .catalogo__productos{
     flex-flow: row nowrap;
