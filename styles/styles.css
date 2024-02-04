@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'Inter';
-    src: url('../assets/fonts/Inter/static/Inter-Medium.ttf');
+    src: url('../assets/fonts/Inter/static/Inter-Light.ttf');
 }
 :root{
     --background-color:#232333; 
@@ -70,6 +70,7 @@ hr{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .mb-0{
     margin-bottom: 0;
@@ -205,7 +206,7 @@ hr{
     width: 100%;
     top: 0;
     z-index: 2;
-    background-color: rgb(35 35 51 /0.50);
+    background-color: rgb(35 35 51 /0.80);
     backdrop-filter:blur(10px);
 }
 .nav {
@@ -222,6 +223,7 @@ hr{
     box-shadow: -1px 5px 4px 0px #000;
     z-index: 2;
     background-color: rgb(35 35 51 /0.95);
+    border: 1px solid rgb(var(--border-color) /0.2);
     display: flex;
     flex-direction: column;
 }
@@ -308,9 +310,3 @@ hr{
     background: rgb(37 53 65 /80%)
 }
 
-
-@media (max-width:570px){
-    .wrapper{
-        padding: 0 15px;
-    }
-}

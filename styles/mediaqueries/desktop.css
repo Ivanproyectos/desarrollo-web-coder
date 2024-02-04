@@ -1,0 +1,132 @@
+html{
+    font-size: 15px;
+}
+.header {
+    padding: 0;
+    height: 64px;
+    box-shadow: 0px 2px 13px 2px rgb(0 0 0 /0.20);
+}
+.header__logo img{
+    width: 150px;
+    height: 30px;
+    object-fit: fill;
+}
+.header__contenedor{
+    height: 100%;
+    align-items: center;
+}
+.header__ingreso .header__btn-comienza{
+    display: block;
+}
+.header__ingreso{
+    gap:1rem;
+}
+.nav {
+    position: relative;
+    display: flex;
+    background-color:transparent;
+    flex-direction: row;
+    transform: initial;
+    width: auto;
+    right: 0;
+    height: auto;
+    box-shadow:initial;
+    padding: 0;
+    margin-right: 2rem;
+    border:initial;
+}
+.nav ul{
+    display: flex;
+}
+.nav-btn-close-menu{
+    display: none;
+}
+.nav ul li{
+    margin:0;
+    display: flex;
+    align-items: center;
+}
+.nav ul li a{
+    padding: 0.5rem 1rem;
+ }
+.header__btn-menu{
+    display: none;
+}
+.portada{
+  height: calc(100vh - 64px);
+  margin: 0;
+  padding-top: 2rem;
+
+}
+.portada__imagen{
+    width: 50%;
+    text-align: right;
+}
+.portada__imagen figure img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+.portada__texto{
+    text-align: left;
+}
+.portada__texto h1 {
+    text-align: left;;
+}
+.portada__accion{
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+.portada__contenido{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.beneficio{
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+}
+.beneficio__card{
+    width: 35%;
+}
+.catalogo__productos{
+    flex-flow: row nowrap;
+}
+.descubre-app{
+    margin: 0 4rem;
+}
+.descubre-app__contenido{
+    flex-direction: row;
+    gap: 4rem;
+}
+.baner-notificacion {
+    background-image: url('../../assets/img/notificacion.png');
+    background-size: contain;
+    background-position:right; 
+    background-repeat: no-repeat;
+}
+.baner-notificacion__copy{
+    max-width: 60%;
+}
+.descubre-app__imagen{
+    margin: 0;
+}
+.descubre-app__imagen img{
+    width: 600px;
+    object-fit: fill;
+    height: auto
+}
+.descubre-app h2{
+    text-align: left;
+}
+.descubre-app__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer__info{
+    flex-flow: row;
+
+}

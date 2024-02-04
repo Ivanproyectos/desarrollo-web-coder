@@ -1,17 +1,19 @@
-
 .portada {
+    margin: 5rem 0;
+}
+.portada__contenido{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 0;
 }
 .portada h1{
-    width: 350px;
+    width: 360px;
 }
 .portada__imagen figure img {
     object-fit: cover;
     height: 310px;
     width: 310px;
+    margin-bottom: 1rem;
 }
 .portada__accion {
     display: flex;
@@ -38,7 +40,6 @@
 
 .beneficio__card {
     width: 70%;
-    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;

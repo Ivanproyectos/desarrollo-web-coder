@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="styles/animaciones.css">
 <link rel="stylesheet" href="styles/styles.css">
 <link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/mediaqueries/tablet.css" media="(min-width:600px)">
+<link rel="stylesheet" href="styles/mediaqueries/desktop.css" media="(min-width:770px)">
 <link rel="stylesheet" href="../assets/boxicons/css/boxicons.min.css">
 <title>Awesome: Inicio</title>
 </head>
@@ -16,19 +18,21 @@
                 <img src="assets/img/Logo.svg" alt="logo">
             </figure>
             <div class="header__navbar">
-                <input  type="checkbox" hidden name="menu" id="btn-menu">
+                <input type="checkbox" hidden name="menu" id="btn-menu">
                 <nav class="nav">
-                    <label class="nav-btn-close-menu" for="btn-menu"><i class="bx bx-x bx-lg"></i></label>
+                    <label class="nav-btn-close-menu" for="btn-menu">
+                        <i class="bx bx-x bx-sm"></i>
+                    </label>
                     <ul>
                         <li><a href="#" class="nav-link-active">Inicio</a></li>
-                        <li><a href="pages/aplicaciones.html" >Soluciones</a></li>
+                        <li><a href="pages/aplicaciones.html">Soluciones</a></li>
                         <li><a href="pages/planes.html">Precios</a></li>
                         <li><a href="pages/contacto-ventas.html">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
-                    <a href="#">Plataforma</a>
-                    <button class="btn btn-danger">Comienza Gratis</button>
+                    <a href="pages/login.html">Plataforma</a>
+                    <button class="btn btn-danger header__btn-comienza">Comienza Gratis</button>
                     <label class="header__btn-menu" for="btn-menu">
                         <i class='bx-md bx bx-menu'></i>
                     </label>
@@ -40,17 +44,19 @@
         <section>
             <div class="wrapper">
                 <div class="portada">
-                    <div class="portada__imagen">
-                        <figure>
-                            <img src="assets/img/portada.png" width="100" alt="persona observando su dashboard">
-                        </figure>
-                    </div>
-                    <div class="portada__texto text-center">
-                        <h1 class="text-center">Potencia tu pyme con soluciones efectivas</h1>
-                        <p>Registrate ahora y obten una prueba gratuita por 15 días.</p>
-                        <div class="portada__accion">
-                            <button class="btn btn-outline-primary">Contáctate a Ventas</button>
-                            <button class="btn btn-danger">Comienza Gratis</button>
+                    <div class="portada__contenido">
+                        <div class="portada__imagen">
+                            <figure>
+                                <img src="assets/img/portada.png" width="100" alt="persona observando su dashboard">
+                            </figure>
+                        </div>
+                        <div class="portada__texto text-center">
+                            <h1 class="text-center">Potencia tu pyme con soluciones efectivas</h1>
+                            <p>Registrate ahora y obten una prueba gratuita por 15 días.</p>
+                            <div class="portada__accion">
+                                <button class="btn btn-outline-primary">Contáctate a Ventas</button>
+                                <button class="btn btn-danger">Comienza Gratis</button>
+                            </div>
                         </div>
                     </div>
                     <div class="beneficio">
@@ -157,17 +163,19 @@
                         <figure class="text-center descubre-app__imagen">
                             <img src="assets/img/olvide-password.png" alt="olvido su clave">
                         </figure>
-                        <div>
+                        <div class="descubre-app__descripcion">
                             <h2 class="text-center">Olvida la molestia de crear y recordar <span
                                     class="text-primary">contreseñas
                                     complicadas</span></h2>
                             <p>Con solo iniciar sesión en tu plataforma digital, tendrás acceso instantáneo a todas tus
                                 aplicaciones
                                 favoritas sin tener que ingresar manualmente tus datos de inicio de sesión cada vez</p>
-                            <button class="btn btn-primary descubre-app__boton">
-                                Descubrir mas aplicativos
-                                <i class='bx bx-right-arrow-alt bx-sm'></i>
-                            </button>
+                            <div>
+                                <button class="btn btn-primary descubre-app__boton">
+                                    Descubrir mas aplicativos
+                                    <i class='bx bx-right-arrow-alt bx-sm'></i>
+                                </button>
+                            </div>
                         </div>
                     </article>
                     <aside class="card baner-notificacion">
@@ -236,4 +244,5 @@
         </div>
     </footer>
 </body>
+
 </html>

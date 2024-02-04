@@ -1,0 +1,10 @@
+html
+{
+    font-size: 14px;
+}
+.portada h1{
+    width: 100%;
+}
+.beneficio__card {
+    width: 50%;
+}
