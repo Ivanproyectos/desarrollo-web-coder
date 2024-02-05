@@ -36,6 +36,11 @@
     gap: .60rem;
     align-items: center;
     margin-bottom: 0.50rem;
+    background: linear-gradient(to top, var(--primary-color),var(--warning-color));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .beneficio__card {

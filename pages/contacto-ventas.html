@@ -4,8 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/utils/reset-bootstrap.css">
 <link rel="stylesheet" href="../assets/boxicons/css/boxicons.min.css">
 <link rel="stylesheet" href="../styles/contacto-ventas.css">
+<link rel="stylesheet" href="../styles/mediaqueries/tablet.css" media="all and (min-width:600px)">
+<link rel="stylesheet" href="../styles/mediaqueries/desktop.css" media="all and (min-width:770px)">
 <title>Awesome: Planes</title>
 </head>
 
@@ -13,22 +16,24 @@
     <header class="header">
         <div class="header__contenedor wrapper">
             <figure class="header__logo">
-                <img src="../assets/img/Logo.svg" alt="logo">
+                <img src="../assets/img/Logo.svg" alt="logo" class="logo">
             </figure>
             <div class="header__navbar">
-                <input  type="checkbox" hidden name="menu" id="btn-menu">
+                <input type="checkbox" hidden name="menu" id="btn-menu">
                 <nav class="nav">
-                    <label class="nav-btn-close-menu" for="btn-menu"><i class="bx bx-x bx-lg"></i></label>
+                    <label class="nav-btn-close-menu" for="btn-menu">
+                        <i class="bx bx-x bx-sm"></i>
+                    </label>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/aplicaciones.html" >Soluciones</a></li>
+                        <li><a href="../pages/aplicaciones.html">Soluciones</a></li>
                         <li><a href="../pages/planes.html">Precios</a></li>
-                        <li><a href="#" class="nav-link-active">Contacto</a></li>
+                        <li><a href="#"  class="nav-link-active">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
-                    <a href="#">Plataforma</a>
-                    <button class="btn btn-danger">Comienza Gratis</button>
+                    <a href="../pages/login.html">Plataforma</a>
+                    <button class="btn btn-danger header__btn-comienza">Comienza Gratis</button>
                     <label class="header__btn-menu" for="btn-menu">
                         <i class='bx-md bx bx-menu'></i>
                     </label>
@@ -48,8 +53,8 @@
                           <input type="nombre" class="form-control" id="nombre" placeholder="ingrese nombre">
                         </div>
                         <div class="form-group col-md-6 mb-3">
-                          <label for="nombre" class="form-label">Correo</label>
-                          <input type="password" class="form-control" id="nombre" placeholder="ingrese correo">
+                          <label for="correo" class="form-label">Correo</label>
+                          <input type="email" class="form-control" id="correo" placeholder="ingrese correo">
                         </div>
                       </div>
                       <div class="row">
@@ -74,8 +79,8 @@
                      <div class="form-group mt-3">
                         <button class="btn btn-primary contacto__btn-enviar" type="button">Enviar</button>
                      </div>
-                     <p class="text-center">
-                        <a class="text-primary" href="/index.html"><i class='bx bx-left-arrow-alt' ></i>Regresar al inicio</a>
+                     <p class="text-center contacto__btn-volver">
+                        <i class='bx bx-left-arrow-alt bx-sm text-primary' ></i><a class="text-primary" href="/index.html">Regresar al inicio</a>
                      </p>
                    
                  </form>
@@ -86,7 +91,7 @@
         <div class="wrapper">
             <div class="footer__contenedor">
                 <figure class="footer__logo-contenedor">
-                    <img src="../assets/img/Logo.svg">
+                    <img src="../assets/img/Logo.svg" class="logo">
                 </figure>
                 <div class="footer__info">
                     <div class="footer__enlace-contenedor">

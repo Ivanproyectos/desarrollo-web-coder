@@ -13,3 +13,8 @@
     border:1px solid var(--primary-color);
     outline: 0;
 }
+.contacto__btn-volver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

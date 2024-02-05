@@ -6,7 +6,7 @@ html{
     height: 64px;
     box-shadow: 0px 2px 13px 2px rgb(0 0 0 /0.20);
 }
-.header__logo img{
+.logo{
     width: 150px;
     height: 30px;
     object-fit: fill;
@@ -70,8 +70,9 @@ html{
 .portada__texto{
     text-align: left;
 }
-.portada__texto h1 {
-    text-align: left;;
+.portada__texto .portada__titulo {
+    text-align: left;
+    font-size: 3rem;
 }
 .portada__accion{
     justify-content: flex-end;
@@ -82,6 +83,7 @@ html{
     align-items: center;
     justify-content: space-between;
 }
+
 .beneficio{
     flex-flow: row nowrap;
     justify-content: center;
@@ -96,6 +98,8 @@ html{
 }
 .catalogo__productos{
     flex-flow: row nowrap;
+    width: 80%;
+    margin: 0 auto;
 }
 .descubre-app{
     margin: 0 4rem;
@@ -133,4 +137,47 @@ html{
 .footer__info{
     flex-flow: row;
 
+}
+
+/*--- contacto ----*/
+.contacto__formulario{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*--- login ----*/
+.login{
+    width: 450px;
+}
+
+/*--- aplicaciones ----*/
+.aplicaciones__lista-app{
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.aplicaciones__input{
+    flex: initial;
+    width: 40%;
+}
+.aplicaciones__filtro {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.aplicaciones__input input {
+    padding: 0.8rem 1rem;
+    padding-left: 35px;
+}
+
+/*--- planes ----*/
+
+.plan__contenedor {
+    /*grid-template-columns: repeat(3,1fr);
+    grid-template-columns: auto auto auto; */
+   grid-template-columns: repeat(auto-fill,minmax(330px, 335px));
+   place-items: center;
+   gap: 0.5rem;
+}
+.plan__etiqueta-popular{
+    width: 100px;
 }

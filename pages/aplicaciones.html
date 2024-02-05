@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="../styles/styles.css">
 <link rel="stylesheet" href="../assets/boxicons/css/boxicons.min.css">
 <link rel="stylesheet" href="../styles/aplicaciones.css">
+<link rel="stylesheet" href="../styles/mediaqueries/tablet.css" media="all and (min-width:600px)">
+<link rel="stylesheet" href="../styles/mediaqueries/desktop.css" media="all and (min-width:770px)">
 <title>Awesome: Aplicaciones</title>
 </head>
 
@@ -12,22 +14,24 @@
     <header class="header">
         <div class="header__contenedor wrapper">
             <figure class="header__logo">
-                <img src="../assets/img/Logo.svg" alt="logo">
+                <img src="../assets/img/Logo.svg" alt="logo" class="logo">
             </figure>
             <div class="header__navbar">
-                <input  type="checkbox" hidden name="menu" id="btn-menu">
+                <input type="checkbox" hidden name="menu" id="btn-menu">
                 <nav class="nav">
-                    <label class="nav-btn-close-menu" for="btn-menu"><i class="bx bx-x bx-lg"></i></label>
+                    <label class="nav-btn-close-menu" for="btn-menu">
+                        <i class="bx bx-x bx-sm"></i>
+                    </label>
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="#" class="nav-link-active" >Soluciones</a></li>
+                        <li><a href="../index.html" >Inicio</a></li>
+                        <li><a href="#" class="nav-link-active">Soluciones</a></li>
                         <li><a href="../pages/planes.html">Precios</a></li>
                         <li><a href="../pages/contacto-ventas.html">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__ingreso">
-                    <a href="#">Plataforma</a>
-                    <button class="btn btn-danger">Comienza Gratis</button>
+                    <a href="pages/login.html">Plataforma</a>
+                    <button class="btn btn-danger header__btn-comienza">Comienza Gratis</button>
                     <label class="header__btn-menu" for="btn-menu">
                         <i class='bx-md bx bx-menu'></i>
                     </label>
@@ -36,9 +40,9 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="wrapper aplicaciones">
-                <h1>Encuentra aquí tu nueva arma para una gestión eficiente</h1>
+        <section class="wrapper ">
+            <div class="aplicaciones">
+                <h2 class="text-center">Encuentra aquí tu nueva arma para una gestión eficiente</h2>
                 <div class="aplicaciones__filtro">
                     <div class="aplicaciones__input">
                         <i class="bx bx-search bx-sm aplicaciones__icon-input"></i>
@@ -76,6 +80,18 @@
                             </button>
                         </div>
                     </article>
+                    <article class="aplicaciones__app">
+                        <h3>Gestion de Gym</h3>
+                        <figure>
+                            <img src="../assets/img/sistema-gym.png" alt="dashboard de un sistema de gym">
+                        </figure>
+                        <div class="aplicaciones__acciones">
+                            <button class="btn btn-outline-primary">Ver demo</button>
+                            <button class="btn btn-primary aplicaciones__acciones--principal">Comenzar
+                                <span class="aplicaciones__icon-animado">🚀</span>
+                            </button>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -84,7 +100,7 @@
         <div class="wrapper">
             <div class="footer__contenedor">
                 <figure class="footer__logo-contenedor">
-                    <img src="../assets/img/Logo.svg">
+                    <img src="../assets/img/Logo.svg" class="logo">
                 </figure>
                 <div class="footer__info">
                     <div class="footer__enlace-contenedor">
