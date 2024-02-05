@@ -7,7 +7,7 @@
     align-items: center;
 }
 .portada h1{
-    width: 360px;
+    width: 350px;
 }
 .portada__imagen figure img {
     object-fit: cover;
@@ -121,12 +121,8 @@
 }
 
 .baner-notificacion {
-    width: 90%;
+    width: 100%;
     background-color: #F4F0E4;
-    /*background-image: url('../assets/img/notificacion.png');
-    background-size: contain;
-    background-position:right; 
-    background-repeat: no-repeat;*/
     color: var(--background-color);
     position: absolute;
     bottom: 0;
@@ -147,9 +143,13 @@
 .baner-notificacion__input input {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    width: 50%;
 }
 
 .baner-notificacion__input button {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+.footer{
+    margin-top: 5rem;
 }

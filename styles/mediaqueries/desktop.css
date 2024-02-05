@@ -118,6 +118,10 @@ html{
 .baner-notificacion__copy{
     max-width: 60%;
 }
+.baner-notificacion__input input {
+    width: initial;
+}
+
 .descubre-app__imagen{
     margin: 0;
 }
