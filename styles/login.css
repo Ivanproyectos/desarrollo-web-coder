@@ -108,3 +108,8 @@ main{
   width: 100%;
   gap:1rem
 }
+.login__btn-volver{
+  padding-top: 1rem;
+  display:flex;
+  justify-content: center;
+}
