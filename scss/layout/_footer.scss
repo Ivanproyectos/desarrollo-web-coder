@@ -1,0 +1,49 @@
+.footer {
+    &__contenedor {
+        padding: 6rem 0;
+    }
+
+    &__info {
+        display: flex;
+        flex-flow: row wrap;
+
+        .footer__enlace-contenedor {
+            flex-basis: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__logo-contenedor {
+        margin: 2rem 0;
+    }
+
+    &__copyright {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    &__copyright-redes {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__red-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        /*padding: 0.5rem;*/
+        height: 35px;
+        width: 35px;
+        background: rgb(37 53 65 /80%)
+    }
+}
+@media only screen and (min-width:map-get($break-points, desktop)) {
+    .footer__info{
+        flex-flow: row;
+    
+    }
+}

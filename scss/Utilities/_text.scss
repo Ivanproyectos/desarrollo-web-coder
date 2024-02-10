@@ -1,0 +1,10 @@
+@each $key, $valor in $theme-colores 
+{
+    .text-#{$key}{ 
+        color: $valor;
+    }
+}
+
+.text-center{
+    text-align: center;
+}

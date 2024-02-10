@@ -1,0 +1,10 @@
+.control-input{
+    padding: 0.600rem 0.850rem;
+    border-radius: 5px;
+    border: 1px solid #8f8f8f; 
+    &:focus{
+        border:1px solid map-get($theme-colores,primary);
+        box-shadow: 0 0 0 0.25rem rgb(105 108 255 / 25%);
+        outline: 0;
+    }
+}

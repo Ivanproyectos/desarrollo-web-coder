@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+html{
+    font-family: 'Inter', sans-serif;
+    /*font-size: 62.5%;*/
+    font-size: 12px;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 2rem;
+    line-height: 3rem; 
+}
+h2{
+    line-height: 2.5rem; 
+}
+main{
+    padding-top:60px ;
+}
+p{
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--primary-color)
+}

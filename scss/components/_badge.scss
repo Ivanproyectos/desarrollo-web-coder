@@ -1,0 +1,13 @@
+.badge{
+    padding: 0.20rem 0.30rem;
+    border-radius: 0.50rem;
+    font-size: 0.9rem;
+ }
+
+@each $key, $valor in $theme-colores 
+{
+    .badge-#{$key}{
+        background: map-get($theme-colores-light, $key); 
+        color:$valor;
+    }
+}

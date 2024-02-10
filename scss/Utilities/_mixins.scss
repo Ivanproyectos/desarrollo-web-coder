@@ -1,0 +1,11 @@
+//flex
+
+@mixin flex-between(){
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-direction($direcion:column){
+    display: flex;
+    flex-direction: $direcion;
+}

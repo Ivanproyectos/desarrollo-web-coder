@@ -1,0 +1,276 @@
+.portada {
+    margin: 5rem 0;
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        width: 350px;
+    }
+
+    &__imagen figure img {
+        object-fit: cover;
+        height: 310px;
+        width: 310px;
+        margin-bottom: 1rem;
+    }
+
+    &__accion {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    &__beneficio {
+        width: 100%;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__beneficio-card {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, .12);
+    }
+
+    &__beneficio-icon {
+        display: flex;
+        flex-direction: column;
+        gap: .60rem;
+        align-items: center;
+        margin-bottom: 0.50rem;
+        background: linear-gradient(to top, map-get($theme-colores, primary), map-get($theme-colores, warning));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+.catalogo {
+    margin: 6rem 0;
+
+    &__productos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__productos .card {
+        transition: all 0.5 ease-in;
+        background: linear-gradient(#34405A, #384C75);
+        view-timeline-name: --catalogo;
+        view-timeline-axis: block;
+        animation-timeline: --catalogo;
+        animation-range: entry 25% cover 50%;
+        animation-name: opacity;
+        animation-fill-mode: both;
+    }
+
+    &__imagen img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &__imagen {
+        margin-bottom: 0.5rem;
+
+    }
+
+    &__producto {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, .12);
+    }
+
+    &__productos .card:nth-child(odd) .catalogo__producto {
+        flex-direction: column-reverse;
+    }
+
+    &__productos .card:nth-child(1) {
+        background: linear-gradient(#5C5CA3, #9191E1);
+
+    }
+
+}
+
+.descubre-app {
+    position: relative;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    &__imagen {
+        margin: 1rem 0;
+    }
+
+    figure img {
+        max-width: 100%;
+        object-fit: cover;
+        height: 310px;
+        width: 310px;
+    }
+
+    &__boton {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.baner-notificacion {
+    width: 100%;
+    background-color: #F4F0E4;
+    color: $background-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(50%);
+
+    &__copy {
+        padding: 2rem;
+    }
+
+    &__input {
+        display: flex;
+
+        input {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: 50%;
+        }
+
+        button {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+
+}
+
+.footer {
+    margin-top: 5rem;
+}
+
+@media only screen and (min-width:map-get($break-points, tablet)) {
+    .portada h1 {
+        width: 100%;
+    }
+
+    .beneficio__card {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:map-get($break-points, desktop)) {
+    .portada {
+        height: calc(100vh - 64px);
+        margin: 0;
+        padding-top: 3rem;
+
+        &__imagen {
+            width: 50%;
+            text-align: right;
+
+            figure img {
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        &__texto {
+            text-align: left;
+
+            .portada__titulo {
+                text-align: left;
+                font-size: 3rem;
+            }
+        }
+
+        &__accion {
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        &__contenido {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__beneficio {
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin: 0;
+            padding-top: 3rem;
+        }
+
+        &__beneficio-card {
+            width: 20%;
+
+            .badge {
+                display: inline-block;
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
+
+    .catalogo__productos {
+        flex-flow: row nowrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .descubre-app {
+        margin: 0 4rem;
+        h2{
+            text-align: left;
+        }
+        &__contenido {
+            flex-direction: row;
+            gap: 4rem;
+        }
+        figure {
+            margin: 0;
+            img{
+                width: 600px;
+                object-fit: fill;
+                height: auto
+            }
+        }
+        &__descripcion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+
+    }
+    .baner-notificacion {
+        background-image: url('../../assets/img/notificacion.png');
+        background-size: contain;
+        background-position:right; 
+        background-repeat: no-repeat;
+        &__copy{
+            max-width: 60%;
+        }
+        &__input input {
+            width: initial;
+        }
+    }
+}

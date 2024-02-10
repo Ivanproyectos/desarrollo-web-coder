@@ -1,0 +1,50 @@
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: 'Inter', sans-serif;
+}
+
+hr {
+    border: 1px solid $border-color-rgb;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.border {
+    border: 1px solid $border-color-rgb;
+}
+.gradient-top {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0px;
+    background: linear-gradient(to right, map-get($theme-colores, primary), map-get($theme-colores, warning));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bg-secondary{
+    background: #2C2C3F;
+}
+
+@media only screen and (min-width:map-get($break-points, tablet)) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:map-get($break-points, desktop)) {
+    html {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 30px;
+        object-fit: fill;
+    }
+}
