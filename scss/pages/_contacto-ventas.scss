@@ -1,0 +1,37 @@
+.contacto__contenedor {
+    margin: 4rem auto;
+}
+
+.contacto__btn-enviar {
+    width: 100%;
+    margin: 1rem 0
+}
+
+.contacto__formulario {
+    .form-control {
+        background-color: transparent;
+        color: #fff;
+
+        &:focus {
+            border: 1px solid map-get($theme-colores, primary);
+            box-shadow: 0 0 0 0.25rem rgb(105 108 255 / .25);
+            outline: 0;
+        }
+    }
+}
+
+.contacto__btn-volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text-primary{
+        color:map-get($theme-colores, primary) !important;
+    }
+}
+
+@media only screen and (min-width:map-get($break-points, desktop)) {
+    .contacto__formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

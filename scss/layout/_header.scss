@@ -30,7 +30,9 @@
     &__btn-menu {
         cursor: pointer;
     }
-
+    &__logo{
+      margin: 0;
+    }
     #btn-menu:checked+.nav {
         right: 0;
     }

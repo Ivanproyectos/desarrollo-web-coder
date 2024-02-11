@@ -81,11 +81,11 @@ a:hover {
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf");
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../assets/fonts/Inter/static/Inter-Light.ttf");
+  src: url("../assets/fonts/Inter/static/Inter-Light.ttf");
 }
 body {
   background-color: #232333;
@@ -129,7 +129,7 @@ hr {
 }
 @media only screen and (min-width: 770px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
   .logo {
     width: 150px;
@@ -207,6 +207,9 @@ hr {
 }
 .header__btn-menu {
   cursor: pointer;
+}
+.header__logo {
+  margin: 0;
 }
 .header #btn-menu:checked + .nav {
   right: 0;
@@ -478,6 +481,40 @@ hr {
   outline: 0;
 }
 
+.contacto__contenedor {
+  margin: 4rem auto;
+}
+
+.contacto__btn-enviar {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.contacto__formulario .form-control {
+  background-color: transparent;
+  color: #fff;
+}
+.contacto__formulario .form-control:focus {
+  border: 1px solid #696CFF;
+  box-shadow: 0 0 0 0.25rem rgba(105, 108, 255, 0.25);
+  outline: 0;
+}
+
+.contacto__btn-volver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__btn-volver .text-primary {
+  color: #696CFF !important;
+}
+
+@media only screen and (min-width: 770px) {
+  .contacto__formulario {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
 .aplicaciones {
   margin: 3rem 0;
 }
