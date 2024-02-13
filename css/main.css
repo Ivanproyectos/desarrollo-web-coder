@@ -133,7 +133,7 @@ hr {
   }
   .logo {
     width: 150px;
-    height: 30px;
+    height: 40px;
     object-fit: fill;
   }
 }
@@ -155,6 +155,8 @@ hr {
   margin-top: 2rem;
   margin-bottom: 3rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .footer__copyright-redes {
   display: flex;
@@ -176,6 +178,13 @@ hr {
 @media only screen and (min-width: 770px) {
   .footer__info {
     flex-flow: row;
+  }
+  .footer__copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__copyright-texto p {
+    margin-bottom: 0;
   }
 }
 .header {
@@ -242,6 +251,7 @@ hr {
 }
 .header .nav ul {
   text-decoration: none;
+  margin-bottom: 0;
 }
 .header .nav ul li {
   list-style: none;
@@ -307,11 +317,11 @@ hr {
   }
 }
 .btn {
-  padding: 0.6rem 0.85rem;
+  padding: 0.65rem 0.85rem;
   border: 1px solid transparent;
   outline: none;
   border-radius: 5px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -890,6 +900,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding-top: 2rem;
 }
 .catalogo__productos .card {
   transition: all 0.5 ease-in;
