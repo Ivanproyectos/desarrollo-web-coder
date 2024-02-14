@@ -1,21 +1,21 @@
 .text-primary {
-  color: #696CFF;
+  color: #696CFF !important;
 }
 
 .text-secondary {
-  color: #484AA8;
+  color: #484AA8 !important;
 }
 
 .text-warning {
-  color: #FFAB00;
+  color: #FFAB00 !important;
 }
 
 .text-danger {
-  color: #FF5733;
+  color: #FF5733 !important;
 }
 
 .text-success {
-  color: #71DD37;
+  color: #71DD37 !important;
 }
 
 .text-center {
@@ -48,6 +48,10 @@ html {
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: initial;
 }
 
 h1 {
